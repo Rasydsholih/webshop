@@ -1,0 +1,641 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family:  sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+header {
+    height: 70px;
+    position: relative;
+    margin-top: -19px;
+}
+
+header h1 {
+    display: inline-block;
+    padding: 15px 24px;
+}
+
+header h1 a:hover {
+    text-shadow:2px 2px 3px #191313;
+}
+
+header h2 {
+    display: inline-block;
+    padding: 15px 24px;
+}
+
+header ul {
+    float: right;
+}
+
+header li {
+    padding: 24px;
+    display: inline-block;
+}
+
+header ul li a:hover {
+    color: burlywood;
+    text-shadow:2px 2px 3px #191313;
+}
+
+a {
+    text-decoration: none;
+}
+
+.atas {
+    width: 90%;
+    margin: 0 auto;
+    background-color: burlywood;
+    border: 1px solid white;
+    color: bisque;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.atas a {
+    color: rgb(255, 255, 255);
+}
+
+.atas:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.mobile-menu {
+    float: right;
+    display: none;
+    padding: 18px;
+}
+
+.mobile-menu:hover {
+    cursor: pointer;
+}
+
+/* #id {
+    display: none;
+} */
+
+input {
+    opacity: 0;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 200px;
+    background-color: rgba(0,0,0,0.4);
+    backdrop-filter: blur(5px);
+    transition: .3s;
+}
+
+.sidebar ul li a {
+    color: white;
+    margin: 10px;
+}
+
+.sidebar ul li {    
+    padding: 24px;
+    transition: .3s;
+    color: rgb(0, 135, 254);
+}
+
+.sidebar ul li:hover {
+    background-color: rgb(92, 68, 68);
+    border-radius: 30px;
+}
+
+.sidebar ul li a:hover {
+    color: burlywood;
+}
+
+#check:checked ~ .sidebar {
+    left: 0;
+}
+
+article {
+    padding: 100px 100px 0px 100px;
+}
+
+article h1 {
+    font-size: 70px;
+}
+
+
+article button {
+  width: 150px;
+  height: 30px;
+  position: relative;
+  top: 20px;
+  background-color: burlywood;
+  border-radius: 20px;
+}
+
+article button i {
+    margin-left: 10px;
+}
+
+.berada {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    background-color: rgba(192, 192, 197, 0.625);
+    backdrop-filter: blur(5px);
+    
+}
+
+.Q1 img {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    top: 60px;
+    margin-bottom: -80px;
+    margin-left: 90px;
+}
+
+
+.Q2 img {
+    width: 350px;
+    height: 350px;
+    margin-left: 70%;
+    margin-top: -590px;
+}
+
+.bungkus {
+    flex-direction: column;
+}
+
+
+
+.fm {
+    margin-top: 165px;
+}
+
+.ditengah {
+    display: flex;
+    position: relative;
+    left: -30px;
+}
+
+.style h2{
+    position: relative;
+    top: 20px;
+}
+
+.style h3 {
+    margin-top: 20px;
+}
+
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-left: 120px;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+}
+
+.item:hover {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+}
+
+.item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.item {
+    display: block;
+}
+
+.item a {
+    display: flex;
+}
+
+.bagian2 {
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.bottom {
+    width: 100%;
+    height: 800px;
+    background-color: black;
+
+}
+
+.height {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    position: relative;
+}
+
+.produk {
+    width: auto;
+    height: 240px;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.why {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.produk img {
+    width: 200px;
+    height: 170px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+
+.side {
+    width: 150px;
+    position: relative;
+    text-align: center;
+    margin-top: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.side h5{
+    font-size: 10px;
+}
+
+.bawah {
+    width: 100%;
+    height: 500px;
+    background-color: grey;
+}
+
+.barang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.barang img {
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+.bagian3 {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.bagian3 button {
+    width: 100px;
+    height: 30px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.bagian3 button i {
+    margin-left: 10px;
+}
+
+footer {
+    width: 100%;
+    height: 400px;
+    background-color: black;
+}
+
+.footer {
+    display: flex;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.paragraf02 {
+    margin-left: 10%;
+    margin-right: 100px;
+}
+
+.paragraf03 {
+    margin-right: 90px;
+}
+
+.paragraf04 {
+    position: relative;
+    left: -15px;
+}
+
+.zx p {
+    position: relative;
+    top: 20px;
+}
+
+.icon a{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 30px;
+}
+
+.add02 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.add03 {
+    margin-right: 10px;
+}
+
+.copy {
+    text-align: center;
+    color: white;
+    margin-top: 130px;
+}
+
+.back {
+    display: none;
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {    
+    .mobile-menu {
+        display: block;
+        margin-right: 30px;
+        margin-top: 5px;
+    }
+
+    .atas ul {
+        display: none;
+    }
+
+    header {
+        margin: 0;
+        margin-top: -19px;
+        z-index: 3;
+    }
+
+    header h2 {
+        display: none;
+    }
+
+    #chek{
+        position: absolute;
+    }
+
+    article h1 {
+        font-size: 40px;
+    }
+
+    .footer {
+        display: inline;
+    }
+
+    .pisah {
+        font-size: 10px;
+    }
+
+    article {
+        text-align: center;
+    }
+    
+
+
+       
+
+}
+
+@media only screen and (max-width: 848px) {
+    .item img {
+        width: 100px;
+        height: 100px;
+    }
+
+    article h1 {
+        font-size: 40px;
+    }
+
+    article {
+        text-align: center;
+    }
+
+    .bungkus {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Q2 img {
+        margin-left: 0;
+        margin-top: 100px;
+    }
+
+    .Q1 img {
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+
+    .ditengah {
+        flex-direction: column;
+        margin-top: -50px;
+    }
+
+    .AM2 {
+        margin-top: -50px;
+    }
+
+    .AM3 {
+        margin-top: -50px;
+    }
+
+    .berada {
+        height: 600px;
+    }
+    
+    .produk img {
+        width: 170px;
+        height: 140px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    .produk {
+        height: 210px;
+    }
+
+    .bottom {
+        height: 1000px;
+    }
+
+    .height {
+        position: relative;
+        bottom: 50px;
+    }
+
+    .bawah {
+        height: 900px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .barang {
+        display: inline;
+    }
+
+    .barang img {
+        width: 200px;
+        height: 200px;
+        margin-left: 60px;
+    }
+
+    .lo01 {
+        margin-bottom: 20px;
+    }
+    
+    .lo02 {
+        margin-top: 20px;
+    }
+
+    .bagian3 {
+        margin-left: 0;
+        margin-right: 0;
+        
+    }
+
+    .bagian3 button i {
+        text-align: center;
+    }
+
+    .bagian3 button {
+        text-align: center;
+        margin-left: 100px;
+        margin-bottom: 20px;
+    } 
+
+    .bagian3 h1 {
+        text-align: center;
+    }
+
+    .bagian3 p {
+        margin-top: 20px;
+    }
+
+    .copy {
+        text-align: center;
+        color: white;
+        margin-top: 90px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        display: flex;
+    }
+
+
+}
+
+@media only screen and (max-width: 750px) {
+    .bottom {
+        width: 100%;
+        height: 1050px;
+        background-color: black;
+    }
+}
+
+@media only screen and (max-width: 652px) {
+    .paragraf02,.paragraf03,.paragraf04 {
+        display: none;
+    }
+
+    .back {
+        display: inline;
+        margin-bottom: 100px;
+    }
+
+    .star {
+        display: flex;
+        margin-top: 50px;
+    }
+
+    .footer {
+        display: inline-block;
+    }
+
+    footer {
+        height: 500px;
+    }
+
+    .copy {
+        text-align: center;
+        color: white;
+        margin-top: 100px;
+    }
+
+    .paragraf06 {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .paragraf07 {
+        position: relative;
+        left: -20px;
+    }
+
+    .Q2 {
+        display: none;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 551px) {
+    .bottom {
+        width: 100%;
+        height: 1300px;
+        background-color: black;
+    }
+
+    .copy {
+        text-align: center;
+        color: white;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 359px) {
+    .bottom {
+        width: 100%;
+        height: 2400px;
+        background-color: black;
+    }
+}
